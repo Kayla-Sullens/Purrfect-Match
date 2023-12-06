@@ -8,11 +8,24 @@ const typeDefs = gql`
     email: String
   }
 
+  type Cat {
+    _id: ID
+    catName: String
+    catAge: Number
+    catBreed: String
+    catBio: String
+  }
+
+  type Comment {
+    _id: ID
+    comInfo: String
+  }
+
   type Auth {
     token: ID
     user: User
   }
-
+  
   type Query {
     user: User
   }
