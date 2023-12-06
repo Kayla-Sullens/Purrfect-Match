@@ -14,12 +14,11 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <NoMatch />,
     children: [
-      // {
-      //   index: true,
-      //   element: <Home />
-      // },
       {
-        index: '/login',
+        index: true,
+        element: <Home />
+      }, {
+        path: '/login',
         element: <Login />
       }, {
         path: '/signup',
@@ -30,5 +29,5 @@ const router = createBrowserRouter([
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router} />
+<RouterProvider router={router} />
 )
