@@ -6,6 +6,10 @@ const catSchema = new Schema({
         required: true,
         trim: true,
     },
+    catGender: {
+        type: String,
+        required: true,
+    },
     catAge: {
         type: Number,
         required: true,
