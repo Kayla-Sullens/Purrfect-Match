@@ -7,6 +7,8 @@ import Home from './pages/Home';
 import NoMatch from './pages/NoMatch';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import CatAll from './pages/CatAll';
+import CatOne from './pages/CatOne';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,12 @@ const router = createBrowserRouter([
       }, {
         path: '/signup',
         element: <Signup />
+      }, {
+        path: '/catone',
+        element: <CatOne />
+      }, {
+        path: '/catall',
+        element: <CatAll />
       },
     ]
   }
