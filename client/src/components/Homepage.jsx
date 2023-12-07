@@ -13,7 +13,7 @@ export const Homepage = () => {
                 </div>
             </div>
             <div className="container about-content">
-                <div clasName="mission">
+                <div className="mission">
                     <p>Our mission is to help find each of our cats their Purrfect family, one match at a time.</p>
                 </div>
                 <div className="about-text">

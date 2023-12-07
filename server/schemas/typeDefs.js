@@ -11,7 +11,7 @@ const typeDefs = gql`
   type Cat {
     _id: ID
     catName: String
-    catAge: Number
+    catAge: Int
     catBreed: String
     catBio: String
   }
@@ -25,7 +25,7 @@ const typeDefs = gql`
     token: ID
     user: User
   }
-  
+
   type Query {
     user: User
   }
