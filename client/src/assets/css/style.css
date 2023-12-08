@@ -1,0 +1,90 @@
+.section_main {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section_main.sign_in {
+    background-image: url('/src/assets/sign_in.jpg');
+}
+
+.section_main.sign_up {
+    background-image: url('/src/assets/sign_up.jpg');
+}
+
+.section_main .container {
+    width: 100%;
+    height: 100%;
+}
+
+.section_main .container .form_main {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.section_main.sign_up .container .form_main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.section_main .container form {
+    background-color: white;
+    width: 520px;
+    min-height: 323px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 30px;
+}
+
+.section_main .container form h2 {
+    font-size: 44px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.section_main .container form .form_group {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.section_main .container form .form_group input {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+
+.section_main .container form .form_group input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.section_main .container form .forget_pass {
+    margin-left: auto;
+}
+
+.section_main .container form .submit_btn {
+    width: 100%;
+}
+
+.section_main .container form .submit_btn button {
+    width: 100%;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    margin: 20px 0 30px;
+    padding: 12px 0;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
