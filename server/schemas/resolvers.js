@@ -12,6 +12,7 @@ const resolvers = {
 
       throw AuthenticationError;
     },
+    
   },
   Mutation: {
     addUser: async (parent, args) => {

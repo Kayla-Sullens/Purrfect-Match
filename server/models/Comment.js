@@ -6,6 +6,14 @@ const commentSchema = new Schema({
         required: true,
         minlength: 1,
     },
+    userId: {
+        type: Schema.Types.ObjectId,
+        ref: "User"
+    },
+    catId: {
+        type: Schema.Types.ObjectId,
+        ref: "Cat"
+    }
 });
 
 
