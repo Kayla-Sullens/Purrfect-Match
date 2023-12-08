@@ -7,7 +7,9 @@ const NavBar = () => {
       return (
         <ul className="flex-row">
           <li className="mx-1">
-            {/* this is not using the Link component to logout or user and then refresh the application to the start */}
+            <Link to="/">Home</Link>
+          </li>
+          <li className="mx-1">
             <a href="/" onClick={() => Auth.logout()}>
               Logout
             </a>
@@ -19,8 +21,12 @@ const NavBar = () => {
     return (
       <ul className="flex-row">
         <li className="mx-1">
+          <Link to="/">Home</Link>
+        </li>
+        <li className="mx-1">
           <Link to="/signup">Signup</Link>
         </li>
+
         <li className="mx-1">
           <Link to="/login">Login</Link>
         </li>
@@ -31,7 +37,7 @@ const NavBar = () => {
   return (
     <header className="flex-row px-1">
       <h1>
-        <Link to="/">MERN Project Template</Link>
+        <Link to="/">Purrfect Match</Link>
       </h1>
       <nav>{showNavigation()}</nav>
     </header>
