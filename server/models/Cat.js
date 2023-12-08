@@ -23,6 +23,10 @@ const catSchema = new Schema({
         required: true,
         minlength: 10,
     },
+    userId: {
+        type: Schema.Types.ObjectId,
+        ref: "User"
+    }
 });
 
 
