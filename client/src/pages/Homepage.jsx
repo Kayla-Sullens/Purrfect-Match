@@ -34,7 +34,7 @@ export const Homepage = () => {
                 <ol>
                     <li>Decide whether you want a kitten or an adult cat.</li>
                     <li>Finding the right personality is key.</li>
-                    <li>How much fur can you handle? Different breeds have different fur and shedding habits, so keep this in mine.</li>
+                    <li>How much fur can you handle? Different breeds have different fur and shedding habits, so keep this in mind.</li>
                     <li>Consider your lifestyle. While most cats don't need as much attention and care as other pets, they do still need daily care.</li>
                     <li>Research and rely on experts! If you have questions, ask someone who knows more about cats and can help you.</li>
                 </ol>
