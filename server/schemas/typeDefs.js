@@ -14,14 +14,14 @@ const typeDefs = gql`
     catAge: Int
     catBreed: String
     catBio: String
-    userId: Schema.Types.ObjectId
+    userId: ID
   }
 
   type Comment {
     _id: ID
     comInfo: String
-    userId: Schema.Types.ObjectId
-    catId: Schema.Types.ObjectId
+    userId: ID
+    catId: ID
   }
 
   type Auth {
