@@ -36,8 +36,8 @@ const App = () => {
       <div>
         <StoreProvider>
           <NavBar />
-          <Footer />
           <Outlet />
+          <Footer />
         </StoreProvider>
       </div>
     </ApolloProvider>
