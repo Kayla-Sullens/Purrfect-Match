@@ -1,5 +1,5 @@
 {
-  "name": "mern-project-template",
+  "name": "Purrfect-Match",
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
@@ -25,5 +25,5 @@
     "react-scripts": "5.0.1",
     "styled-components": "^6.0.9",
     "web-vitals": "^2.1.4"
-}
+  }
 }
