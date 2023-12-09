@@ -12,7 +12,7 @@ const typeDefs = gql`
     _id: ID
     catName: String
     catAge: Int
-    catBreed: String
+    catSpecies: String
     catBio: String
     userId: Schema.Types.ObjectId
   }
