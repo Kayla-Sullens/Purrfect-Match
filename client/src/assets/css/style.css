@@ -1,3 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif !important;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 114px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col-md-8 {
+    width: 70%;
+    padding: 0 15px;
+}
+
+.col-md-4 {
+    width: 30%;
+    padding: 0 15px;
+}
+
+.col-md-6 {
+    width: 50%;
+    padding: 0 15px;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400 !important;
+    font-family: 'Londrina Solid', sans-serif !important;
+}
+
+.main_header {
+    background: #52331A;
+}
+
+.main_header .row {
+    align-items: center;
+}
+
+header {
+    padding: 15px 0;
+}
+
+header .head_nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header .head_nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+header .head_nav ul li+li {
+    margin-left: 30px;
+}
+
+header .head_nav ul li a {
+    font-size: 17px;
+    font-weight: 500;
+    color: #E0BCA0;
+}
+
+.user_info {
+    margin-left: 50px;
+    display: flex;
+}
+
+.user_info span {
+    display: inline-block;
+    margin: 0 10px;
+    color: #E0BCA0;
+    font-size: 22px;
+}
+
+.user_info a {
+    border-radius: 3px;
+    padding: 7px 20px;
+    color: #52331A;
+    border: 1px solid #f3a847;
+    background-color: #E0BCA0;
+}
+
+.user_info a:hover {
+    background-color: transparent;
+    color: #E0BCA0;
+}
+
+.section_hero {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/src/assets/5.jpg');
+}
+
+.section_hero .row {
+    height: 100%;
+}
+
+.section_hero .col-md-6 {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    height: 100%;
+}
+
+.section_hero .col-md-6 h3 {
+    font-size: 93px;
+    color: #52331A;
+}
+
+.section_hero .col-md-6 p {
+    font-size: 28px;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 50px;
+    color: #52331A;
+}
+
+.section_hero .col-md-6 button {
+    padding: 20px 70px;
+    width: fit-content;
+    font-size: 27px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    background: #52331A;
+    color: #E0BCA0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .section_main {
     width: 100%;
     height: 100vh;
