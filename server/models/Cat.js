@@ -14,7 +14,7 @@ const catSchema = new Schema({
         type: Number,
         required: true,
     },
-    catBreed: {
+    catSpecies: {
         type: String,
         required: true,
     },
