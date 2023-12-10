@@ -8,3 +8,16 @@ export const QUERY_USER = gql`
     }
   }
 `;
+
+export const QUERY_CAT = gql`
+  query cat($_id: ID!) {
+    cat(_id: $_id) {
+      _id
+      catName
+      catAge
+      catSpecies
+      catBio
+      userId
+    }
+  }
+`;
