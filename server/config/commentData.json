@@ -1,0 +1,12 @@
+[
+    {
+      "name": "Foundations of Data Science",
+      "building": "CHEM",
+      "creditHours": 3
+    },
+    {
+      "name": "Introduction to Computational Thinking",
+      "building": "LS",
+      "creditHours": 3
+    }
+]
