@@ -21,3 +21,14 @@ export const QUERY_CAT = gql`
     }
   }
 `;
+
+export const QUERY_COMMENT = gql`
+  query comment($_id: ID!) {
+    comment(_id: $_id) {
+      _id
+      comInfo
+      userId
+      catId
+    }
+  }
+`;
