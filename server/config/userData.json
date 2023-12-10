@@ -1,12 +1,26 @@
 [
     {
-      "name": "Foundations of Data Science",
-      "building": "CHEM",
-      "creditHours": 3
+        "firstName": "George",
+        "lastName": "Washington",
+        "email": "geo@testmail.com",
+        "password": "password12345"
     },
     {
-      "name": "Introduction to Computational Thinking",
-      "building": "LS",
-      "creditHours": 3
+        "firstName": "Abraham",
+        "lastName": "Lincoln",
+        "email": "abe@testmail.com",
+        "password": "password12345"
+    },
+    {
+        "firstName": "Theodore Roosevelt",
+        "lastName": "Washington",
+        "email": "teddy@testmail.com",
+        "password": "password12345"
+    },
+    {
+        "firstName": "Thomas",
+        "lastName": "Jefferson",
+        "email": "tommy@testmail.com",
+        "password": "password12345"
     }
 ]
