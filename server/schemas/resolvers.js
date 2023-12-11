@@ -1,5 +1,6 @@
-const { User } = require("../models");
+const { User, Cat, Comment } = require("../models");
 const { signToken, AuthenticationError } = require("../utils/auth");
+const kittyDitty = require("../config/catData.json");
 
 const resolvers = {
   Query: {
@@ -12,6 +13,15 @@ const resolvers = {
 
       throw AuthenticationError;
     },
+    cats: async (parent, args, context) => {
+      const cats = await Cat.find({});
+
+      return cats;
+    },
+    cat: async (parent, args, context) => {
+      const cat = await Cat.findOne({});
+      
+      return cat;
     
   },
   Mutation: {
