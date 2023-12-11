@@ -1,12 +1,11 @@
 [
     {
-      "name": "Foundations of Data Science",
-      "building": "CHEM",
-      "creditHours": 3
+      "comInfo": "Wow! beautiful coat! I'm in love!"
     },
     {
-      "name": "Introduction to Computational Thinking",
-      "building": "LS",
-      "creditHours": 3
-    }
+        "comInfo": "this cat look a lil sus..."
+      },
+      {
+        "comInfo": "ahhh kawaii~~~"
+      }
 ]
