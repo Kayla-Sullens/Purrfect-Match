@@ -59,7 +59,8 @@ const resolvers = {
     },
     //TODO: updateCat, deleteCat, createComment, deleteComment
     updateCat: async (parent, args, context) => {
-          const cat = Cat.findByIdAndUpdate(args._id);
+          const cat = await Cat.findByIdAndUpdate(args.id, { catName: args.updateCatName }, { new: true });
+          console.log(cat);
           return cat;
     },
 

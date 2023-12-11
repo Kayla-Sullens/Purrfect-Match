@@ -31,3 +31,16 @@ export const ADD_USER = gql`
     }
   }
 `;
+
+export const UPDATE_CATNAME = gql`
+  mutation Mutation($updateCatName: String, $updateCatId: ID) {
+    updateCat(updateCatName: $updateCatName, id: $updateCatId) {
+      userId
+      catSpecies
+      catName
+      catBio
+      catAge
+      _id
+    }
+  }
+`;

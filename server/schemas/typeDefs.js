@@ -52,15 +52,16 @@ const typeDefs = gql`
     ): User
     login(email: String!, password: String!): Auth
     updateCat(
-    catName: String
+      id: ID
+      updateCatName: String
     ): Cat
     deleteCat(
       _id: ID
     ): Cat
     addComment(
-    comInfo: String
-    userId: ID
-    catId: ID
+      comInfo: String
+      userId: ID
+      catId: ID
     ): Comment
     deleteComment(
       _id: ID
