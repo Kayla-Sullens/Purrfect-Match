@@ -60,10 +60,14 @@ const resolvers = {
     //TODO: updateCat, deleteCat, createComment, deleteComment
     updateCat: async (parent, args, context) => {
           const cat = await Cat.findByIdAndUpdate(args.id, { catName: args.updateCatName }, { new: true });
-          console.log(cat);
+
           return cat;
     },
+    deleteCat: async (parent, args, context) => {
+      const cat = await Cat.findByIdAndDelete(args._id);
 
+      return cat;
+},
   },
 };
 

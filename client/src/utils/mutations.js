@@ -44,3 +44,16 @@ export const UPDATE_CATNAME = gql`
     }
   }
 `;
+
+export const DELETE_CAT = gql`
+  mutation Mutation($id: ID) {
+    deleteCat(_id: $id) {
+      _id
+      catName
+      catAge
+      catSpecies
+      catBio
+      userId
+    }
+  }
+`;

@@ -22,6 +22,19 @@ export const QUERY_CAT = gql`
   }
 `;
 
+export const QUERY_CATS = gql`
+query cats {
+  cats {
+    userId
+    catSpecies
+    catName
+    catBio
+    catAge
+    _id
+  }
+}
+`;
+
 export const QUERY_COMMENT = gql`
   query comment($_id: ID!) {
     comment(_id: $_id) {
