@@ -13,17 +13,17 @@ const resolvers = {
 
       throw AuthenticationError;
     },
-    cats: async (parent, args, context) => {
+    cats: async () => {
       const cats = await Cat.find({});
 
       return cats;
     },
-    cat: async (parent, args, context) => {
-      const cat = await Cat.findOne({});
+    cat: async (_, args) => {
+      const cat = await Cat.findById(args._id);
       
       return cat;
-    
-  },
+    }
+},
   Mutation: {
     addUser: async (parent, args) => {
       const user = await User.create(args);
@@ -57,6 +57,12 @@ const resolvers = {
 
       return { token, user };
     },
+    //TODO: updateCat, deleteCat, createComment, deleteComment
+    updateCat: async (parent, args, context) => {
+          const cat = Cat.findByIdAndUpdate(args._id);
+          return cat;
+    },
+
   },
 };
 

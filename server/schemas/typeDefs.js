@@ -51,7 +51,23 @@ const typeDefs = gql`
       password: String
     ): User
     login(email: String!, password: String!): Auth
+    updateCat(
+    catName: String
+    ): Cat
+    deleteCat(
+      _id: ID
+    ): Cat
+    addComment(
+    comInfo: String
+    userId: ID
+    catId: ID
+    ): Comment
+    deleteComment(
+      _id: ID
+    ): Comment
   }
 `;
+
+//TODO: check returns
 
 module.exports = typeDefs;
