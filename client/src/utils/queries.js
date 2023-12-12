@@ -9,6 +9,16 @@ export const QUERY_USER = gql`
   }
 `;
 
+export const QUERY_CATS = gql`
+  {
+    cats {
+      _id
+      catName
+      catBio
+    }
+  }
+`;
+
 export const QUERY_CAT = gql`
   query cat($_id: ID!) {
     cat(_id: $_id) {

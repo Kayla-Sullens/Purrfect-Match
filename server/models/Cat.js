@@ -6,11 +6,6 @@ const catSchema = new Schema({
         required: true,
         trim: true,
     },
-    catImage: {
-        type: String,
-        required: true,
-        trim: true,
-    },
     catGender: {
         type: String,
         required: true,
@@ -33,7 +28,6 @@ const catSchema = new Schema({
         ref: "User"
     }
 });
-
 
 const Cat = model("Cat", catSchema);
 
