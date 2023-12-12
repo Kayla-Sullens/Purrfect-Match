@@ -1,6 +1,7 @@
 [
     {
         "catName": "Bean",
+        "catImage": "cat1.jpeg",
         "catGender": "Male",
         "catAge": 1,
         "catSpecies": "Bengal",
@@ -8,6 +9,7 @@
     },
     {
         "catName": "Muffin",
+        "catImage": "cat2.jpeg",
         "catGender": "Female",
         "catAge": 1,
         "catSpecies": "Bengal",
@@ -15,6 +17,7 @@
     },
     {
         "catName": "Oliver",
+        "catImage": "cat3.jpeg",
         "catGender": "Male",
         "catAge": 0.5,
         "catSpecies": "American Shorthair",
@@ -22,6 +25,7 @@
     },
     {
         "catName": "Luna",
+        "catImage": "cat4.jpeg",
         "catGender": "Female",
         "catAge": 0.4,
         "catSpecies": "Norwegian Forest Cat",
@@ -29,6 +33,7 @@
     },
     {
         "catName": "Charlie",
+        "catImage": "cat5.webp",
         "catGender": "Male",
         "catAge": 2,
         "catSpecies": "Tabby Cat",
@@ -36,6 +41,7 @@
     },
     {
         "catName": "Jasper",
+        "catImage": "cat6.jpeg",
         "catGender": "Male",
         "catAge": 0.7,
         "catSpecies": "American Wirehair",
@@ -43,6 +49,7 @@
     },
     {
         "catName": "Milo",
+        "catImage": "cat7.jpeg",
         "catGender": "Male",
         "catAge": 2,
         "catSpecies": "Siberian",
@@ -50,6 +57,7 @@
     },
     {
         "catName": "Zoe",
+        "catImage": "cat8.jpeg",
         "catGender": "Female",
         "catAge": 0.9,
         "catSpecies": "Abyssinian",
@@ -57,6 +65,7 @@
     },
     {
         "catName": "Bella",
+        "catImage": "cat9.jpeg",
         "catGender": "Female",
         "catAge": 3,
         "catSpecies": "Siamese",
