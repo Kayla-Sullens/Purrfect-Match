@@ -14,6 +14,7 @@ export const QUERY_CAT = gql`
     cat(_id: $_id) {
       _id
       catName
+      catImage
       catAge
       catSpecies
       catBio
@@ -26,6 +27,7 @@ export const QUERY_CATS = gql`
 query cats {
   cats {
     userId
+    catImage
     catSpecies
     catName
     catBio
