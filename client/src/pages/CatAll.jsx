@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import { QUERY_CATS } from "../utils/queries";
+import { useQuery } from "@apollo/client";
+import { QUERY_CATS } from "../utils/queries";
 
 const CatAll = () => {
   const { loading, error, data } = useQuery(QUERY_CATS, {});

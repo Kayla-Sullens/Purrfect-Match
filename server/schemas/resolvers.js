@@ -1,4 +1,4 @@
-const { User, Cat } = require("../models");
+const { User, Cat, Comment } = require("../models");
 const { signToken, AuthenticationError } = require("../utils/auth");
 
 const resolvers = {
@@ -65,6 +65,21 @@ const resolvers = {
       const token = signToken(user);
 
       return { token, user };
+    },
+    //TODO: updateCat, deleteCat, createComment, deleteComment
+    updateCat: async (parent, args, context) => {
+      const cat = await Cat.findByIdAndUpdate(
+        args.id,
+        { catName: args.updateCatName },
+        { new: true }
+      );
+
+      return cat;
+    },
+    deleteCat: async (parent, args, context) => {
+      const cat = await Cat.findByIdAndDelete(args._id);
+
+      return cat;
     },
   },
 };
