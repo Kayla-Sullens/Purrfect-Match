@@ -14,7 +14,7 @@ const catSchema = new Schema({
         type: Number,
         required: true,
     },
-    catBreed: {
+    catSpecies: {
         type: String,
         required: true,
     },
@@ -23,6 +23,10 @@ const catSchema = new Schema({
         required: true,
         minlength: 10,
     },
+    userId: {
+        type: Schema.Types.ObjectId,
+        ref: "User"
+    }
 });
 
 

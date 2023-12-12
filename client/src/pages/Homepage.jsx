@@ -3,8 +3,6 @@
 export const Homepage = () => {
     return (
         <main className="homepage">
-
-
             <setion className="section_hero">
                 <div className="container">
                     <div className="row">
@@ -84,7 +82,6 @@ export const Homepage = () => {
                     </div>
                 </div>
             </section>
-
             <footer className="footer">
                 <div className="container">
                     <div className="row">
@@ -92,9 +89,6 @@ export const Homepage = () => {
                     </div>
                 </div>
             </footer>
-
-
-
         </main>
     );
 };

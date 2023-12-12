@@ -1,5 +1,6 @@
-const { User } = require("../models");
+const { User, Cat, Comment } = require("../models");
 const { signToken, AuthenticationError } = require("../utils/auth");
+const kittyDitty = require("../config/catData.json");
 
 const resolvers = {
   Query: {
@@ -12,7 +13,17 @@ const resolvers = {
 
       throw AuthenticationError;
     },
-  },
+    cats: async () => {
+      const cats = await Cat.find({});
+
+      return cats;
+    },
+    cat: async (_, args) => {
+      const cat = await Cat.findById(args._id);
+      
+      return cat;
+    }
+},
   Mutation: {
     addUser: async (parent, args) => {
       const user = await User.create(args);
@@ -46,6 +57,17 @@ const resolvers = {
 
       return { token, user };
     },
+    //TODO: updateCat, deleteCat, createComment, deleteComment
+    updateCat: async (parent, args, context) => {
+          const cat = await Cat.findByIdAndUpdate(args.id, { catName: args.updateCatName }, { new: true });
+
+          return cat;
+    },
+    deleteCat: async (parent, args, context) => {
+      const cat = await Cat.findByIdAndDelete(args._id);
+
+      return cat;
+},
   },
 };
 

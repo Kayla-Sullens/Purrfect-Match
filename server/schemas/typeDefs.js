@@ -11,14 +11,17 @@ const typeDefs = gql`
   type Cat {
     _id: ID
     catName: String
-    catAge: Int
-    catBreed: String
+    catAge: Float
+    catSpecies: String
     catBio: String
+    userId: ID
   }
 
   type Comment {
     _id: ID
     comInfo: String
+    userId: ID
+    catId: ID
   }
 
   type Auth {
@@ -28,6 +31,10 @@ const typeDefs = gql`
 
   type Query {
     user: User
+    cat(_id: ID!): Cat
+    cats: [Cat]
+    comment(_id: ID!): Comment
+    comments: [Comment]
   }
 
   type Mutation {
@@ -44,7 +51,24 @@ const typeDefs = gql`
       password: String
     ): User
     login(email: String!, password: String!): Auth
+    updateCat(
+      id: ID
+      updateCatName: String
+    ): Cat
+    deleteCat(
+      _id: ID
+    ): Cat
+    addComment(
+      comInfo: String
+      userId: ID
+      catId: ID
+    ): Comment
+    deleteComment(
+      _id: ID
+    ): Comment
   }
 `;
+
+//TODO: check returns
 
 module.exports = typeDefs;

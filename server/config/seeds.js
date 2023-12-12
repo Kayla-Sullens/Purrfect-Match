@@ -1,22 +1,20 @@
 const db = require("./connection");
-const { User } = require("../models");
+const { User, Cat, Comment } = require("../models");
 const cleanDB = require("./cleanDB");
+
+const userData = require('./userData.json');
+const catData = require('./catData.json');
+const commentData = require('./commentData.json');
 
 db.once("open", async () => {
   await cleanDB("User", "users");
-  await User.create({
-    firstName: "Pamela",
-    lastName: "Washington",
-    email: "pamela@testmail.com",
-    password: "password12345",
-  });
+  await cleanDB("Cat", "cats");
+  await cleanDB("Comment", "comments");
 
-  await User.create({
-    firstName: "Elijah",
-    lastName: "Holt",
-    email: "eholt@testmail.com",
-    password: "password12345",
-  });
+  // bulk create each model
+await User.insertMany(userData);
+await Cat.insertMany(catData);
+await Comment.insertMany(commentData);
 
   console.log("users seeded");
 

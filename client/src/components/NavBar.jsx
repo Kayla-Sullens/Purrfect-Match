@@ -2,28 +2,31 @@ import Auth from "../utils/auth";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
-  const showNavigation = () => {
-    if (Auth.loggedIn()) {
-      return (
-        <ul className="flex-row">
-          <li className="mx-1">
-            {/* this is not using the Link component to logout or user and then refresh the application to the start */}
-            <a href="/" onClick={() => Auth.logout()}>
-              Logout
-            </a>
-          </li>
-        </ul>
-      );
-    }
+  // const showNavigation = () => {
+  //   if (Auth.loggedIn()) {
+  //     return (
+  //       <ul className="flex-row">
+  //         <li className="mx-1">
+  //           <Link to="/">Home</Link>
+  //         </li>
+  //         <li className="mx-1">
+  //           <a href="/" onClick={() => Auth.logout()}>
+  //             Logout
+  //           </a>
+  //         </li>
+  //       </ul>
+  //     );
+  //   }
 
-    return (
-      <div className="user_info">
-        <a href="/login">Sign In</a>
-        <span>|</span>
-        <a href="/signup">Sign Up</a>
-      </div>
-    );
-  };
+  //   return (
+  //     <div className="user_info">
+  //       <a href="/login">Sign In</a>
+  //       <span>|</span>
+  //       <a href="/signup">Sign Up</a>
+  //     </div>
+  //   );
+  // };
+
   return (
     <header className="main_header">
       <div className="container">
