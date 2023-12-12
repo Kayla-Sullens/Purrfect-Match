@@ -15,18 +15,13 @@ const CatAll = () => {
   return (
     <div className="container my-2">
       <h2>Check out our avialable cats!</h2>
-      <h3>{cat.catName}</h3>
-      <p>{cat.catAge}</p>
-      <p>{cat.catGender}</p>
-      <p>{cat.catSpecies}</p>
-      <p>{cat.catBio}</p>
       {cats.map((cat) => (
         <div key={cat._id}>
           <h3>{cat.catName}</h3>
           <div>
           <img src={`/images/${cat.catImage}`}/>
           </div>
-          <p>{cat.catAge}</p>
+          <p>Age: {cat.catAge}</p>
           <p>{cat.catGender}</p>
           <p>{cat.catSpecies}</p>
           <p>{cat.catBio}</p>

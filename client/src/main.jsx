@@ -33,7 +33,7 @@ const router = createBrowserRouter([
         element: <CatOne />,
       },
       {
-        path: "/catall",
+        path: "/cats",
         element: <CatAll />,
       },
     ],
