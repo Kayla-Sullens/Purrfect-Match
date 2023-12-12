@@ -1,6 +1,5 @@
 const { User, Cat, Comment } = require("../models");
 const { signToken, AuthenticationError } = require("../utils/auth");
-const kittyDitty = require("../config/catData.json");
 
 const resolvers = {
   Query: {
@@ -13,17 +12,27 @@ const resolvers = {
 
       throw AuthenticationError;
     },
-    cats: async () => {
-      const cats = await Cat.find({});
 
-      return cats;
+    cat: async (_, { _id }) => {
+      try {
+        console.log("Fetching cat with ID:", _id);
+        const cat = await Cat.findById(_id);
+        return cat;
+      } catch (error) {
+        console.error(error);
+        throw new Error("Error fetching cat");
+      }
     },
-    cat: async (_, args) => {
-      const cat = await Cat.findById(args._id);
-      
-      return cat;
-    }
-},
+    cats: async () => {
+      try {
+        const cats = await Cat.find();
+        return cats;
+      } catch (error) {
+        console.error(error);
+        throw new Error("Error fetching cats");
+      }
+    },
+  },
   Mutation: {
     addUser: async (parent, args) => {
       const user = await User.create(args);
@@ -59,15 +68,19 @@ const resolvers = {
     },
     //TODO: updateCat, deleteCat, createComment, deleteComment
     updateCat: async (parent, args, context) => {
-          const cat = await Cat.findByIdAndUpdate(args.id, { catName: args.updateCatName }, { new: true });
+      const cat = await Cat.findByIdAndUpdate(
+        args.id,
+        { catName: args.updateCatName },
+        { new: true }
+      );
 
-          return cat;
+      return cat;
     },
     deleteCat: async (parent, args, context) => {
       const cat = await Cat.findByIdAndDelete(args._id);
 
       return cat;
-},
+    },
   },
 };
 
