@@ -17,23 +17,36 @@ const NavBar = () => {
     }
 
     return (
-      <ul className="flex-row">
-        <li className="mx-1">
-          <Link to="/signup">Signup</Link>
-        </li>
-        <li className="mx-1">
-          <Link to="/login">Login</Link>
-        </li>
-      </ul>
+      <div className="user_info">
+        <a href="/login">Sign In</a>
+        <span>|</span>
+        <a href="/signup">Sign Up</a>
+      </div>
     );
   };
-
   return (
-    <header className="flex-row px-1">
-      <h1>
-        <Link to="/">MERN Project Template</Link>
-      </h1>
-      <nav>{showNavigation()}</nav>
+    <header className="main_header">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-4">
+            <Link to="/"> <img src="./src/assets/logo.png" alt="" /></Link>
+          </div>
+          <div className="col-md-8">
+            <div className="head_nav">
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Cat All</a></li>
+                <li><a href="">Cat One</a></li>
+              </ul>
+              <div className="user_info">
+                <a href="/login">Sign In</a>
+                <span>|</span>
+                <a href="/signup">Sign Up</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
   );
 };
