@@ -18,95 +18,111 @@ const Footer = () => {
                     marginTop: "10px",
                 }}
             >
-                Purrfect Match
+                &copy; Purrfect Match 2023
             </h1>
             <FooterContainer>
                 <Row>
                     <Column>
-                        <Heading>About Us</Heading>
+                        <Heading>Purrfect Match Repository</Heading>
                         <FooterLink href="https://github.com/Kayla-Sullens/Purrfect-Match.git">
-                            Purrfect Match Repo
-                        </FooterLink>
-                        <FooterLink href="#">
-                            Vision
-                        </FooterLink>
-                        <FooterLink href="#">
-                            Testimonials
-                        </FooterLink>
+                        <i className="fa fa-github fa-3x">
+                                <span
+                                    style={{
+                                        marginLeft: "10px",
+                                    }}
+                                >
+                                </span>
+                            </i>
+                            </FooterLink>
                     </Column>
-                    <Column>
-                        <Heading>Services</Heading>
-                        <FooterLink href="#">
-                            Writing
-                        </FooterLink>
-                        <FooterLink href="#">
-                            Internships
-                        </FooterLink>
-                        <FooterLink href="#">
-                            Coding
-                        </FooterLink>
-                        <FooterLink href="#">
-                            Teaching
-                        </FooterLink>
-                    </Column>
+                    
                     <Column>
                         <Heading>Contact Us</Heading>
                         <FooterLink href="#">
-                            Uttar Pradesh
+                        <i className="fa fa-github fa-2x">
+                                <span
+                                    style={{
+                                        marginLeft: "10px",
+                                    }}
+                                >
+                                </span>
+                            </i>
+                            Kayla Sullens
                         </FooterLink>
                         <FooterLink href="#">
-                            Ahemdabad
+                        <i className="fa fa-github fa-2x">
+                                <span
+                                    style={{
+                                        marginLeft: "10px",
+                                    }}
+                                >
+                                </span>
+                            </i>
+                            Evan Griggs
                         </FooterLink>
                         <FooterLink href="#">
-                            Indore
+                        <i className="fa fa-github fa-2x">
+                                <span
+                                    style={{
+                                        marginLeft: "10px",
+                                    }}
+                                >
+                                </span>
+                            </i>
+                            Laura Tavira
                         </FooterLink>
                         <FooterLink href="#">
-                            Mumbai
+                        <i className="fa fa-github fa-2x">
+                                <span
+                                    style={{
+                                        marginLeft: "10px",
+                                    }}
+                                >
+                                </span>
+                            </i>
+                            Stephany Placito
+                        </FooterLink>
+                        <FooterLink href="#">
+                        <i className="fa fa-github fa-2x">
+                                <span
+                                    style={{
+                                        marginLeft: "10px",
+                                    }}
+                                >
+                                </span>
+                            </i>
+                            Jaime Quezada
                         </FooterLink>
                     </Column>
                     <Column>
                         <Heading>Social Media</Heading>
                         <FooterLink href="#">
-                            <i className="fab fa-facebook-f">
+                            <i className="fa fa-facebook-f fa-3x">
                                 <span
                                     style={{
                                         marginLeft: "10px",
                                     }}
                                 >
-                                    Facebook
                                 </span>
                             </i>
                         </FooterLink>
                         <FooterLink href="#">
-                            <i className="fab fa-instagram">
+                            <i className="fa fa-instagram fa-3x">
                                 <span
                                     style={{
                                         marginLeft: "10px",
                                     }}
                                 >
-                                    Instagram
                                 </span>
                             </i>
                         </FooterLink>
                         <FooterLink href="#">
-                            <i className="fab fa-twitter">
+                            <i className="fa fa-twitter fa-3x">
                                 <span
                                     style={{
                                         marginLeft: "10px",
                                     }}
                                 >
-                                    Twitter
-                                </span>
-                            </i>
-                        </FooterLink>
-                        <FooterLink href="#">
-                            <i className="fab fa-youtube">
-                                <span
-                                    style={{
-                                        marginLeft: "10px",
-                                    }}
-                                >
-                                    Youtube
                                 </span>
                             </i>
                         </FooterLink>
