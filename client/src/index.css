@@ -71,7 +71,6 @@ p {
 
 a {
   color: var(--tertiary);
-  color: #E0BCA0;
   text-decoration: none;
   font-weight: bold;
 }
@@ -209,3 +208,6 @@ input:focus {
     width: 100%;
   }
 }
+
+
+
