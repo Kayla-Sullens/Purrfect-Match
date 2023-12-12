@@ -29,7 +29,7 @@ const router = createBrowserRouter([
         element: <Signup />,
       },
       {
-        path: "/catone/:catId",
+        path: "/catone/:catId/:imgId",
         element: <CatOne />,
       },
       {

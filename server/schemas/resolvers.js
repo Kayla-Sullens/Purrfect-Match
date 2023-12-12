@@ -1,4 +1,4 @@
-const { User } = require("../models");
+const { User, Cat } = require("../models");
 const { signToken, AuthenticationError } = require("../utils/auth");
 
 const resolvers = {
@@ -12,7 +12,26 @@ const resolvers = {
 
       throw AuthenticationError;
     },
-    
+
+    cat: async (_, { _id }) => {
+      try {
+        console.log("Fetching cat with ID:", _id);
+        const cat = await Cat.findById(_id);
+        return cat;
+      } catch (error) {
+        console.error(error);
+        throw new Error("Error fetching cat");
+      }
+    },
+    cats: async () => {
+      try {
+        const cats = await Cat.find();
+        return cats;
+      } catch (error) {
+        console.error(error);
+        throw new Error("Error fetching cats");
+      }
+    },
   },
   Mutation: {
     addUser: async (parent, args) => {

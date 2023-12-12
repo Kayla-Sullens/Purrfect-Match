@@ -11,7 +11,7 @@ const typeDefs = gql`
   type Cat {
     _id: ID
     catName: String
-    catAge: Int
+    catAge: String
     catSpecies: String
     catBio: String
     userId: ID

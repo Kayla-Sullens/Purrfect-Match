@@ -1,9 +1,12 @@
+const catSeeds = require("../schemas/cat-seeds");
 const db = require("./connection");
 const { User } = require("../models");
 const cleanDB = require("./cleanDB");
 
 db.once("open", async () => {
   await cleanDB("User", "users");
+  await cleanDB("Cat", "cats");
+
   await User.create({
     firstName: "Pamela",
     lastName: "Washington",
@@ -19,6 +22,10 @@ db.once("open", async () => {
   });
 
   console.log("users seeded");
+  // Seed cat data using cat-seeds.js
+  await catSeeds();
+
+  console.log("Cats seeded");
 
   process.exit();
 });
