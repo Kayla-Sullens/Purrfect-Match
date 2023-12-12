@@ -11,7 +11,7 @@ const typeDefs = gql`
   type Cat {
     _id: ID
     catName: String
-    catAge: Float
+    catAge: String
     catSpecies: String
     catBio: String
     userId: ID
@@ -51,24 +51,11 @@ const typeDefs = gql`
       password: String
     ): User
     login(email: String!, password: String!): Auth
-    updateCat(
-      id: ID
-      updateCatName: String
-    ): Cat
-    deleteCat(
-      _id: ID
-    ): Cat
-    addComment(
-      comInfo: String
-      userId: ID
-      catId: ID
-    ): Comment
-    deleteComment(
-      _id: ID
-    ): Comment
+    updateCat(id: ID, updateCatName: String): Cat
+    deleteCat(_id: ID): Cat
+    addComment(comInfo: String, userId: ID, catId: ID): Comment
+    deleteComment(_id: ID): Comment
   }
 `;
-
-//TODO: check returns
 
 module.exports = typeDefs;

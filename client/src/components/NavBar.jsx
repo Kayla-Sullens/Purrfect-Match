@@ -10,9 +10,9 @@ const NavBar = () => {
             <Link to="/">Home</Link>
           </li>
           <li className="mx-1">
-            <a href="/" onClick={() => Auth.logout()}>
+            <Link href="/" onClick={() => Auth.logout()}>
               Logout
-            </a>
+            </Link>
           </li>
         </ul>
       );
