@@ -82,13 +82,6 @@ export const Homepage = () => {
                 </div>
             </div>
         </section>
-        <footer className="footer">
-            <div className="container">
-                <div className="row">
-                    <p >Copy @ 2023</p>
-                </div>
-            </div>
-        </footer>
     </main>
 );
 };
