@@ -37,8 +37,8 @@ const Footer = () => {
                     </Column>
                     
                     <Column>
-                        <Heading>Contact Us</Heading>
-                        <FooterLink href="#">
+                        <Heading>Contributors</Heading>
+                        <FooterLink href="https://github.com/Kayla-Sullens">
                         <i className="fa fa-github fa-2x">
                                 <span
                                     style={{
@@ -49,7 +49,7 @@ const Footer = () => {
                             </i>
                             Kayla Sullens
                         </FooterLink>
-                        <FooterLink href="#">
+                        <FooterLink href="https://github.com/Evanilla57">
                         <i className="fa fa-github fa-2x">
                                 <span
                                     style={{
@@ -60,7 +60,7 @@ const Footer = () => {
                             </i>
                             Evan Griggs
                         </FooterLink>
-                        <FooterLink href="#">
+                        <FooterLink href="https://github.com/taviral55">
                         <i className="fa fa-github fa-2x">
                                 <span
                                     style={{
@@ -71,7 +71,7 @@ const Footer = () => {
                             </i>
                             Laura Tavira
                         </FooterLink>
-                        <FooterLink href="#">
+                        <FooterLink href="https://github.com/splacito22">
                         <i className="fa fa-github fa-2x">
                                 <span
                                     style={{
@@ -82,7 +82,7 @@ const Footer = () => {
                             </i>
                             Stephany Placito
                         </FooterLink>
-                        <FooterLink href="#">
+                        <FooterLink href="https://github.com/quezadajaime">
                         <i className="fa fa-github fa-2x">
                                 <span
                                     style={{
