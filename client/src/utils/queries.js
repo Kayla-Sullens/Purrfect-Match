@@ -17,6 +17,7 @@ export const QUERY_CATS = gql`
       catImage
       catAge
       catSpecies
+      catGender
     }
   }
 `;
@@ -29,6 +30,7 @@ export const QUERY_CAT = gql`
       catImage
       catAge
       catSpecies
+      catGender
       catBio
       userId
     }

@@ -12,6 +12,7 @@ const typeDefs = gql`
     _id: ID
     catName: String
     catImage: String
+    catGender: String
     catAge: String
     catSpecies: String
     catBio: String
