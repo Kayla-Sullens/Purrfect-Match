@@ -12,7 +12,7 @@ db.once("open", async () => {
   await cleanDB("Comment", "comments");
 
   // bulk create each model
-  await User.insertMany(userData);
+  await User.create(userData);
   await Cat.insertMany(catData);
   await Comment.insertMany(commentData);
 
