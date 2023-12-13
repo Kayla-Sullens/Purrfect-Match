@@ -14,7 +14,7 @@ const CatAll = () => {
 
   return (
     <div className="container my-2">
-      <h2>Check out our avialable cats!</h2>
+      <h2>Check out our available cats!</h2>
       {cats.map((cat, idx) => (
         <div key={cat._id}>
           <Link to={`/catone/${cat._id}/${idx}`}>
@@ -23,9 +23,9 @@ const CatAll = () => {
           <div>
             <img src={`/images/${cat.catImage}`} />
           </div>
-          <p>Age: {cat.catAge}</p>
-          <p>Gender: {cat.catGender}</p>
-          <p>Species: {cat.catSpecies}</p>
+          <p>{cat.catAge}</p>
+          <p>{cat.catGender}</p>
+          <p>{cat.catSpecies}</p>
           <p>{cat.catBio}</p>
         </div>
       ))}
