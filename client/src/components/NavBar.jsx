@@ -18,6 +18,7 @@ const Nav = styled.nav`
 const NavItem = styled.li`
   list-style: none;
   margin: 1em;
+  
   padding: 0.25em 1em;
 
 
