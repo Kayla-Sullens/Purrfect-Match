@@ -75,7 +75,6 @@ const resolvers = {
 
       return { token, user };
     },
-    //TODO: updateCat, deleteCat, createComment, deleteComment
     updateCat: async (parent, args, context) => {
       const cat = await Cat.findByIdAndUpdate(
         args.id,
@@ -96,13 +95,7 @@ const resolvers = {
       const comment = await Comment.create(args);
 
       return comment; // Return the newly inserted comment
-    },
-    // ,
-    // deleteCat: async (parent, args, context) => {
-    //   const com = await Comment.findByIdAndDelete(args._id);
-
-    //   return com;
-    // }
+    }
   }
 };
 
