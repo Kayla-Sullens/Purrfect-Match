@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    max-width: 114px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -336,6 +336,113 @@ header .head_nav ul li a {
     letter-spacing: 2px;
 }
 
+.sectio-cats {
+    background-image: url('/src/assets/catallbg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.sectio-cats .container>h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sectio-cats .cat-box {
+    border: 1px solid #52331A !important;
+    background-color: #E0BCA0;
+    border-radius: 10px;
+    padding: 11px;
+    margin-bottom: 30px;
+}
+
+.sectio-cats .cat-img {
+    height: 250px;
+}
+
+.sectio-cats .cat-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.sectio-cats .cat-desc a {
+    color: #272f32;
+    font-size: 36px;
+    margin: 15px 0 0;
+    display: block;
+}
+
+.sectio-cats .cat-desc a:hover {
+    color: #52331A;
+    text-decoration: none;
+}
+
+.section_cat_details .cat_banner {
+    position: relative;
+    height: 500px;
+}
+
+.sectio-cats .cat-desc p {
+    font-size: 20px;
+    color: #272f32;
+    margin: 5px 0;
+}
+
+.section_cat_details .cat_banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section_cat_details .cat_banner>.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 1200px;
+    transform: translate(-50%);
+}
+
+.section_cat_details h2 {
+    font-size: 90px;
+}
+
+.section_cat_details .cat_details .cat_info {
+    margin-bottom: 20px;
+}
+
+.section_cat_details .cat_details .cat_info span {
+    display: inline-block;
+    font-size: 20px;
+    background: #52331A;
+    padding: 4px 20px;
+    border-radius: 7px;
+    color: white;
+}
+
+.section_cat_details .cat_details .cat_info span+span {
+    margin-left: 20px;
+}
+
+.section_cat_details .cat_details p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.section_cat_details .cat_details button {
+    border-radius: 3px;
+    padding: 10px 30px;
+    color: #52331A;
+    border: 1px solid #f3a847;
+    background-color: #E0BCA0;
+}
+
+.section_cat_details .cat_details button+button {
+    margin-left: 20px;
+}
+
 .footer {
     padding: 15px 0;
     border-top: 1px solid #52331A;
@@ -347,4 +454,111 @@ header .head_nav ul li a {
 
 .footer p {
     text-align: center;
+}
+
+@media only screen and (max-device-width: 767px) {
+    .row {
+        flex-flow: column;
+    }
+
+    .col-md-6 {
+        width: 100%;
+    }
+
+    .col-md-8 {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .col-md-4 {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .col {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .user_info {
+        margin-left: 12px;
+    }
+
+    .user_info a {
+        padding: 7px 16px;
+        font-size: 13px;
+    }
+
+    header .head_nav ul li a {
+        font-size: 12px;
+    }
+
+    .section_hero {
+        padding: 40px 0;
+        height: auto;
+    }
+
+    .section_hero .col-md-6 button {
+        padding: 20px 28px;
+        font-size: 17px;
+    }
+
+    .section_hero .col-md-6 h3 {
+        font-size: 41px;
+    }
+
+    .section_hero .col-md-6 p {
+        font-size: 18px;
+        margin-bottom: 27px;
+    }
+
+    .section_wellcome {
+        padding: 40px 0;
+        background: #52331A;
+    }
+
+    .section_wellcome p {
+        font-size: 16px;
+    }
+
+    .section_our_cat {
+        padding: 40px 0;
+    }
+
+    .section_our_cat p {
+        margin-bottom: 40px;
+    }
+
+    .section_our_cat .cat_info {
+        height: auto;
+        margin-bottom: 33px;
+    }
+
+    .sectio-cats .container>h2 {
+        font-size: 44px;
+    }
+
+    .sectio-cats .cat-img {
+        height: 151px;
+    }
+
+    .sectio-cats .cat-desc a {
+        font-size: 28px;
+        margin: 8px 0 0;
+    }
+
+    .sectio-cats .cat-desc p {
+        font-size: 17px;
+        margin: 5px 0;
+    }
+
+    .section_cat_details .cat_details .cat_info span {
+        font-size: 17px;
+        padding: 4px 16px;
+    }
+
+    .section_cat_details .cat_details .cat_info span+span {
+        margin-left: 13px;
+    }
+
 }
