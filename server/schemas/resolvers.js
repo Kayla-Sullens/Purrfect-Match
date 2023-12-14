@@ -32,6 +32,15 @@ const resolvers = {
         throw new Error("Error fetching cats");
       }
     },
+    comments: async (_, args) => {
+      try {
+        const comments = await Comment.find({ catId: args.catId });
+        return comments;
+      } catch (error) {
+        console.error(error);
+        throw new Error("Error fetching comments");
+      }
+    },
   },
   Mutation: {
     addUser: async (parent, args) => {
@@ -66,7 +75,6 @@ const resolvers = {
 
       return { token, user };
     },
-    //TODO: updateCat, deleteCat, createComment, deleteComment
     updateCat: async (parent, args, context) => {
       const cat = await Cat.findByIdAndUpdate(
         args.id,
@@ -82,17 +90,12 @@ const resolvers = {
       return cat;
     },
     addComment: async (parent, args, context) => {
-      const db = context.db; // Assuming the MongoDB client is available in the context
-      const commentCollection = db.collection('Comment'); // Replace 'Comment' with your actual collection name
-      const com = await commentCollection.insertOne(args.comInfo);
-      return com.ops[0]; // Return the newly inserted comment
-    },
-    // ,
-    // deleteCat: async (parent, args, context) => {
-    //   const com = await Comment.findByIdAndDelete(args._id);
+      console.log(args);
+      console.log(context.user);
+      const comment = await Comment.create(args);
 
-    //   return com;
-    // }
+      return comment; // Return the newly inserted comment
+    }
   }
 };
 

@@ -58,3 +58,13 @@ export const DELETE_CAT = gql`
     }
   }
 `;
+
+export const ADD_COMMENT = gql`
+  mutation Mutation($comInfo: String, $catId: ID) {
+    addComment(comInfo: $comInfo, catId: $catId) {
+      _id
+      comInfo
+      catId
+    }
+  }
+`;
