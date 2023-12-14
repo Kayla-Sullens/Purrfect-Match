@@ -82,10 +82,11 @@ const resolvers = {
       return cat;
     },
     addComment: async (parent, args, context) => {
-      const db = context.db; // Assuming the MongoDB client is available in the context
-      const commentCollection = db.collection('Comment'); // Replace 'Comment' with your actual collection name
-      const com = await commentCollection.insertOne(args.comInfo);
-      return com.ops[0]; // Return the newly inserted comment
+      console.log(args);
+      console.log(context.user);
+      const comment = await Comment.create(args);
+
+      return comment; // Return the newly inserted comment
     },
     // ,
     // deleteCat: async (parent, args, context) => {
