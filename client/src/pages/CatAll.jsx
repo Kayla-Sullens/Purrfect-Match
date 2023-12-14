@@ -8,12 +8,10 @@ const CatAll = () => {
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
 
-  // const cat = data.cat;
-  // derrived state
   const cats = data?.cats || [];
 
   return (
-    <section className="sectio-cats">
+    <section className="section-cats">
       <div className="container my-2">
         <h2>Check out our available cats!</h2>
         <div className="row">
