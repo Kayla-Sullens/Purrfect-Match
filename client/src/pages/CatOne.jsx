@@ -23,14 +23,28 @@ const CatOne = () => {
   if (!cat) return <p>Cat not found.</p>;
 
   return (
-    <div className="container my-2">
-      <img src={`/images/${imageURl}`}></img>
-      <h2>{cat.catName}</h2>
-      <p>{cat.catAge}</p>
-      <p>{cat.catSpecies}</p>
-      <p>{cat.catGender}</p>
-      <p>{cat.catBio}</p>
-    </div>
+    <section className="section_cat_details">
+      <div className="cat_banner">
+        <img src={`/images/${imageURl}`}></img>
+        <div className="container">
+          <div className="row">
+            <h2>{cat.catName}</h2>
+          </div>
+        </div>
+      </div>
+      <div className="container my-2">
+        <div className="cat_details">
+          <div className="cat_info">
+            <span>{cat.catAge}</span>
+            <span>{cat.catSpecies}</span>
+            <span>{cat.catGender}</span>
+          </div>
+          <p>{cat.catBio}</p>
+          <button onClick={() => handleAdopt(cat._id)}>Adopt</button>
+          <button onClick={() => handleComment(cat._id)}>Comment</button>
+        </div>
+      </div>
+    </section>
   );
 };
 

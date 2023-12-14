@@ -13,23 +13,27 @@ const CatAll = () => {
   const cats = data?.cats || [];
 
   return (
-    <div className="container my-2">
-      <h2>Check out our available cats!</h2>
-      {cats.map((cat, idx) => (
-        <div key={cat._id}>
-          <Link to={`/catone/${cat._id}/${idx}`}>
-            <h3>{cat.catName}</h3>
-          </Link>
-          <div>
-            <img src={`/images/${cat.catImage}`} />
-          </div>
-          <p>{cat.catAge}</p>
-          <p>{cat.catGender}</p>
-          <p>{cat.catSpecies}</p>
-          <p>{cat.catBio}</p>
+    <section className="sectio-cats">
+      <div className="container my-2">
+        <h2>Check out our available cats!</h2>
+        <div className="row">
+          {cats.map((cat, idx) => (
+            <div className="col-md-4" key={cat._id}>
+              <div className="cat-box">
+                <div className="cat-img"><img src={`/images/${cat.catImage}`} /></div>
+                <div className="cat-desc">
+                  <Link to={`/catone/${cat._id}/${idx}`}>{cat.catName}</Link>
+                  <p>{cat.catAge}</p>
+                  <p>{cat.catGender}</p>
+                  <p>{cat.catSpecies}</p>
+                  <p>{cat.catBio}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
+      </div>
+    </section>
   );
 };
 
