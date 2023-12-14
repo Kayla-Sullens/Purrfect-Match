@@ -36,7 +36,7 @@ const typeDefs = gql`
     cat(_id: ID!): Cat
     cats: [Cat]
     comment(_id: ID!): Comment
-    comments: [Comment]
+    comments(catId: ID!): [Comment]
   }
 
   type Mutation {

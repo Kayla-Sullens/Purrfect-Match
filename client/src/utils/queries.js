@@ -47,3 +47,14 @@ export const QUERY_COMMENT = gql`
     }
   }
 `;
+
+// Query comment by catId
+export const QUERY_COMMENT_BY_CAT_ID = gql`
+  query Query($catId: ID!) {
+    comments(catId: $catId) {
+      _id
+      catId
+      comInfo
+    }
+  }
+`;

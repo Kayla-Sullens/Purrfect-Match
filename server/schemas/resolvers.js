@@ -32,6 +32,15 @@ const resolvers = {
         throw new Error("Error fetching cats");
       }
     },
+    comments: async (_, args) => {
+      try {
+        const comments = await Comment.find({ catId: args.catId });
+        return comments;
+      } catch (error) {
+        console.error(error);
+        throw new Error("Error fetching comments");
+      }
+    },
   },
   Mutation: {
     addUser: async (parent, args) => {
