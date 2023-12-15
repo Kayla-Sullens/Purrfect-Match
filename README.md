@@ -14,6 +14,8 @@
 
 -[Contributing](#contributing)
 
+-[Credits](#credits)
+
 -[License](#license)
 
 Purrfect Match is a web application that allows users to view, explore and comment on cats avaiable for adoption.
@@ -67,6 +69,13 @@ Contributions are always welcome! If you'd like to contribute to this project, p
 3. Make your changes and commit them: `git commit -m '<commit_message>'`
 4. Push to the original branch: `git push origin <branch_name>`
 5. Create a pull request and briefly describe the changes you've made.
+
+## Credits
+
+- https://www.apollographql.com/docs/react/data/mutations/
+- https://www.apollographql.com/docs/react/data/queries/
+- https://www.mongodb.com/docs/manual/reference/method/db.collection.findOneAndUpdate/
+- https://www.geeksforgeeks.org/mongodb-findoneanddelete-method/
 
 ## License
 
