@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
-import { useQuery } from "@apollo/client";
-import { QUERY_CAT } from "../utils/queries";
+import { useQuery, useMutation } from "@apollo/client";
+import { QUERY_CAT, QUERY_USER } from "../utils/queries";
+import { ADOPT_CAT } from "../utils/mutations";
 
 const CatOne = () => {
   const { catId, imgId } = useParams();

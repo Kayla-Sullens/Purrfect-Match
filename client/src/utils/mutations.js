@@ -31,6 +31,7 @@ export const ADD_USER = gql`
     }
   }
 `;
+
 export const ADOPT_CAT = gql`
 mutation AdoptCat($userId: ID, $catId: ID) {
   adoptCat(userId: $userId, catId: $catId) {
