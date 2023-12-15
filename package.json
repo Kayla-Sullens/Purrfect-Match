@@ -25,5 +25,8 @@
     "react-scripts": "5.0.1",
     "styled-components": "^6.0.9",
     "web-vitals": "^2.1.4"
+  },
+  "engines": {
+    "node": "21.1.0"
   }
 }
