@@ -13,6 +13,8 @@ const CatOne = () => {
     variables: { _id: catId },
   });
 
+  //TODO: For future development, add functionality to add comments and adopt cats
+
   console.log("loading:", loading);
   console.log("error:", error);
   console.log("data:", data);
