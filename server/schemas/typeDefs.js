@@ -57,6 +57,7 @@ const typeDefs = gql`
     deleteCat(_id: ID): Cat
     addComment(comInfo: String, userId: ID, catId: ID): Comment
     deleteComment(_id: ID): Comment
+    adoptCat(userId: ID, catId: ID): Comment
   }
 `;
 

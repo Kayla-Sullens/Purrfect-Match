@@ -90,11 +90,19 @@ const resolvers = {
       return cat;
     },
     addComment: async (parent, args, context) => {
-      console.log(args);
-      console.log(context.user);
+
       const comment = await Comment.create(args);
 
       return comment; // Return the newly inserted comment
+    },
+    adoptCat: async (parent, args, context) => {
+      const cat = await Cat.findByIdAndUpdate(
+        args.catId,
+        { userId: args.userId },
+        { new: true }
+
+      );
+      return cat;
     }
   }
 };
